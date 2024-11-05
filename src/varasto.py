@@ -1,3 +1,23 @@
+
+class BreakPylint:
+    def __init__(self, a, b, c) -> None:
+        self.x = None
+
+        if a and b or c:
+            self.x = 1
+
+            if b and c:
+                self.x = 2
+
+                if c:
+                    self.x = 3
+        
+    def too_long_func(self, a, b, c):
+        if a == b and c == a or a - 2 == 5 and 3 == 3 and b - a == c or 3 - 1 == c and a + b == c and c == a or 5 - 2 == a + b - c and a - b - c == a + c or  a and c or b + c and a - b == c or a and c and b:
+            print('moi')
+
+        
+
 class Varasto:
     def __init__(self, tilavuus, alku_saldo = 0):
         if tilavuus > 0.0:
